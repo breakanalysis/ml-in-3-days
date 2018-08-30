@@ -34,7 +34,7 @@ def cheat(code):
                reg.fit(X, Y)''',
         12: '''pred = reg.predict(X)
                acc = (pred == Y).sum()/2000''',
-        13: "cross_val_score(reg, X, Y, scoring='accuracy', cv=5)"
+        13: "cross_val_score(reg, X, Y, scoring='accuracy', cv=5)",
         14: '''# first cell:
                sizes, train_scores, test_scores = learning_curve(LogisticRegression(), X, Y, cv=5, scoring='accuracy', train_sizes=np.linspace(0.1,1.0,200))
                # second cell:

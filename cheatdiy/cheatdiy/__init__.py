@@ -1,1 +1,1 @@
-from .cheat-diy import *
+from .cheatdiy import *

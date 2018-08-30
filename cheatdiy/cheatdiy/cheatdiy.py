@@ -58,8 +58,9 @@ def cheat(code):
                plt.semilogx(params, -valid_scores_mean, c='blue', label='validation')
                plt.legend()''',
         16: "parameters = [{'kernel':['poly'], 'degree':[1, 2,3]}, {'kernel': ['rbf'], 'C': [1,10]}, {'kernel': ['linear'], 'C': [1,10], 'gamma': [0.1,1]}]",
-        17: '''def dL(s):
-                    return np.exp(-s)''',
+        17: '''
+               def dL(s):
+                     return np.exp(-s)''',
         18: '''def h(X,w):
                     return np.matmul(X,w)''',
         19: '''X = data.copy()

@@ -2,7 +2,7 @@ import inspect
 
 def cheat(code):
     cheat_dict = {
-        '1': "" 
+        '0': "This is a cheat for Exercise 0!" 
     }
     if code in cheat_dict:
         print(inspect.cleandoc(cheat_dict[code]))
@@ -11,6 +11,7 @@ def cheat(code):
 
 def hint(code):
     hint_dict = {
+        '0': "This is a hint for Exercise 0!" 
     }
     if code in hint_dict:
         print(inspect.cleandoc(hint_dict[code]))

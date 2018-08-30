@@ -124,9 +124,9 @@ def hint(code):
         4: "use two arguments for number of rows and number of columns",
         5: '''use some_array[row_selector, column_selector] for selection of rows and columns. colon (:) selects all rows or columns
               hint(5.2) for next hint''',
-        5.2: "when you have sliced out onedimensional arrays with x-coordinates and y-coordinates, give these as arguments to plt.scatter."
+        5.2: "when you have sliced out onedimensional arrays with x-coordinates and y-coordinates, give these as arguments to plt.scatter.",
         6: '''to scale all of the points you want to scale all numbers in the matrix so use the *= operator.
-              hint(6.2) for next hint'''
+              hint(6.2) for next hint''',
         6.2: "use column selection as above. this gives you one dimensional arrays. you can also assign things to this selection which updates a single column of the original matrix. use += for convenience",
         7: '''twoD2 = np.random.randn(1000,2)
               X = np.vstack([twoD, twoD2])''',

@@ -128,16 +128,16 @@ def hint(code):
         6: '''to scale all of the points you want to scale all numbers in the matrix so use the *= operator.
               hint(6.2) for next hint''',
         6.2: "use column selection as above. this gives you one dimensional arrays. you can also assign things to this selection which updates a single column of the original matrix. use += for convenience",
-        7: '''twoD2 = np.random.randn(1000,2)
-              X = np.vstack([twoD, twoD2])''',
-        8: '''Y = np.vstack([np.ones((1000,1)),-1*np.ones((1000,1))])
-              data = np.hstack([X, Y])''',
-        9: '''plt.scatter(twoD[:,0], twoD[:,1], c='gray')
-              plt.scatter(twoD2[:,0], twoD2[:,1], c='pink')''',
+        7: "vstack should be given a list of arrays to stack on top of eachother",
+        8: '''when creating the ones, you can make it into a array of shape (1000,1) by passing this tuple to np.ones.
+              for negative ones do the same and then use multiplication.
+              finally hstack as the same signature as vstack.''',
+        9: "use plt.scatter in the same manner as before, and add color: plt.scatter(__fill_in__, c='gray')",
         10: '''perm = np.random.permutation(2000)
-               data = data[perm]
-               # shuffle again
-               np.random.shuffle(data)''',
+               try to change the order of a test list:
+               li = np.array([10,100,1000])
+               li[[1,0,2]]
+               for the np.random.shuffle method please see help or cheat.''',
         11: '''# pick all rows and all columns excluding the last one
                X = data[:,:-1]
                # pick all rows and only last column

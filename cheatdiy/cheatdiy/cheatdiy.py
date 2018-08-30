@@ -61,8 +61,9 @@ def cheat(code):
         17: '''
                def dL(s):
                      return np.exp(-s)''',
-        18: '''def h(X,w):
-                    return np.matmul(X,w)''',
+        18: '''
+               def h(X,w)
+                     return np.matmul(X,w)''',
         19: '''X = data.copy()
                X[:,2] = 1''',
         20: '''# Learning rate, try different values if you want. What is the connection to epochs?

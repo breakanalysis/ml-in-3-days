@@ -164,7 +164,7 @@ def hint(code):
                plt.semilogx(params, -train_scores_mean, c='red', label='train')
                plt.semilogx(params, -valid_scores_mean, c='blue', label='validation')
                plt.legend()''',
-        16: '''use a list of directories.  
+        16: '''use a list of dictionaries.  
                parameters = [{'kernel':['poly'], 'degree':[1, 2,3]}, __continue_with_the_other_kernels__]''',
         17: '''
                def dL(s):

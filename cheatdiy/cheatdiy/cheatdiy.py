@@ -164,7 +164,8 @@ def hint(code):
                plt.semilogx(params, -train_scores_mean, c='red', label='train')
                plt.semilogx(params, -valid_scores_mean, c='blue', label='validation')
                plt.legend()''',
-        16: "parameters = [{'kernel':['poly'], 'degree':[1, 2,3]}, __continue_with_the_other_kernels__]",
+        16: '''use a list of directories.  
+               parameters = [{'kernel':['poly'], 'degree':[1, 2,3]}, __continue_with_the_other_kernels__]''',
         17: '''
                def dL(s):
                      return np.exp(__fill_in__)''',
@@ -172,7 +173,7 @@ def hint(code):
                def h(X,w)
                      # return np.matmul(w,X)
                      # or...
-                     # return np.matmul(X,w)''',
+                     # return np.matmul(X,w)??''',
         19: '''X = data.copy()
                X[:,__select_third_column__] = 1''',
         20: "No hint given for this 'bonus' exercise." 
